@@ -1,0 +1,264 @@
+<html>
+<head>
+    <title>Grocery Store Inventory System</title>
+    <link rel="stylesheet" href="css/carbon-components.css">
+    <link rel="stylesheet" href="css/store.css">
+</head>
+
+<div class="tableContent">
+
+
+        <div data-floating-menu-container>
+                <div class="bx--data-table-v2-container" data-table-v2>
+                  <h1 class="bx--data-table-v2-header">Grocery Store Inventory System</h1>
+                  <section class="bx--table-toolbar">
+                    <div class="bx--batch-actions" aria-label="Table Action Bar">
+                      <div class="bx--action-list">
+                        <button class="bx--btn bx--btn--sm bx--btn--ghost" type="button">
+                          Ghost
+                          <svg class="bx--btn__icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7H4v2h3v3h2V9h3V7H9V4H7v3zm1 9A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" fill-rule="evenodd" />
+                          </svg>
+                        </button>
+              
+                        <button class="bx--btn bx--btn--sm bx--btn--ghost" type="button">
+                          Ghost
+                          <svg class="bx--btn__icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7H4v2h3v3h2V9h3V7H9V4H7v3zm1 9A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" fill-rule="evenodd" />
+                          </svg>
+                        </button>
+              
+                        <button class="bx--btn bx--btn--sm bx--btn--ghost" type="button">
+                          Ghost
+                          <svg class="bx--btn__icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7H4v2h3v3h2V9h3V7H9V4H7v3zm1 9A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" fill-rule="evenodd" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="bx--batch-summary">
+                        <p class="bx--batch-summary__para">
+                          <span data-items-selected>3</span> items selected</p>
+                        <button data-event="action-bar-cancel" class="bx--batch-summary__cancel">Cancel</button>
+                      </div>
+                    </div>
+              
+                    <div class="bx--toolbar-search-container">
+                      <div data-search class="bx--search bx--search--sm bx--search--light" role="search">
+                        <svg class="bx--search-magnifier" width="16" height="16" viewBox="0 0 16 16">
+                          <path d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm4.936-1.27l4.563 4.557-.707.708-4.563-4.558a6.5 6.5 0 1 1 .707-.707z"
+                            fill-rule="nonzero" />
+                        </svg>
+                        <label id="search-input-label-1" class="bx--label" for="search__input-2">Search</label>
+                        <input class="bx--search-input" type="text" id="search__input-2" role="search" placeholder="Search" aria-labelledby="search-input-label-1">
+                        <button id="search-cancel" class="bx--search-close bx--search-close--hidden" title="Clear search
+                        input" aria-label="Clear search input">
+                          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 6.586L5.879 4.464 4.464 5.88 6.586 8l-2.122 2.121 1.415 1.415L8 9.414l2.121 2.122 1.415-1.415L9.414 8l2.122-2.121-1.415-1.415L8 6.586zM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
+                              fill-rule="evenodd" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+              
+                    <div class="bx--toolbar-content add-container">
+                      
+              
+                      <button class="bx--btn bx--btn--sm bx--btn--primary" id="add-new-button">Add Item</button>
+                    </div>
+                  </section>
+              
+                  <table class="bx--data-table-v2 bx--data-table-v2--zebra table">
+                    <thead>
+                      <tr>
+                          
+                        <th>
+                            <button class="bx--table-sort-v2" data-event="sort">
+                                    <span class="bx--table-header-label">Status</span>
+                                    <svg class="bx--table-sort-v2__icon" width="10" height="5" viewBox="0 0 10 5">
+                                        <path d="M0 0l5 4.998L10 0z" fill-rule="evenodd" />
+                                    </svg>
+                                    </button>
+                        </th>
+                        <th>
+                          <button class="bx--table-sort-v2" data-event="sort">
+                            <span class="bx--table-header-label">Name</span>
+                            <svg class="bx--table-sort-v2__icon" width="10" height="5" viewBox="0 0 10 5">
+                              <path d="M0 0l5 4.998L10 0z" fill-rule="evenodd" />
+                            </svg>
+                          </button>
+                        </th>
+                        <th>
+                          <button class="bx--table-sort-v2" data-event="sort">
+                            <span>Unit Price ($)</span>
+                            <svg class="bx--table-sort-v2__icon" width="10" height="5" viewBox="0 0 10 5">
+                              <path d="M0 0l5 4.998L10 0z" fill-rule="evenodd" />
+                            </svg>
+                          </button>
+                        </th>
+                        <th>
+                          <button class="bx--table-sort-v2" data-event="sort">
+                            <span>Quantity</span>
+                            <svg class="bx--table-sort-v2__icon" width="10" height="5" viewBox="0 0 10 5">
+                              <path d="M0 0l5 4.998L10 0z" fill-rule="evenodd" />
+                            </svg>
+                          </button>
+                        </th>
+                        
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                    </table>
+                  </div>
+                </div>
+                <input class="bx--visually-hidden">       
+  </div>   
+
+  </div>
+
+</div>
+
+<div class="footer-content">
+  Powered by <a href="https://microclimate-dev2ops.github.io"><img src="img/codewind.png" alt="Microclimate" class="logo"></a>
+</div>
+
+<!-- ADD NEW MODAL -->
+  <div data-modal class="bx--modal add-modal" tabindex="-1">
+      <div class="bx--modal-container add-modal-container">
+          <div class="bx--modal-header">
+              <p class="bx--modal-header__heading bx--type-beta heading">Add New Grocery Item</p>
+              <button class="bx--modal-close" type="button" data-modal-close data-i18n="[aria-label]messageModal.close">
+                  <svg class="bx--modal-close__icon" width="10" height="10" viewBox="0 0 10 10" fill-rule="evenodd">
+                      <path d="M9.8 8.6L8.4 10 5 6.4 1.4 10 0 8.6 3.6 5 .1 1.4 1.5 0 5 3.6 8.6 0 10 1.4 6.4 5z"></path>
+                  </svg>
+              </button>
+          </div>
+  
+          <div>
+  
+              <div data-notification class="bx--inline-notification bx--inline-notification--error add-error-notification" role="alert"
+                  style="display: none">
+                  <div class="bx--inline-notification__details">
+                      <svg class="bx--inline-notification__icon" width="16" height="16" viewBox="0 0 16 16" fill-rule="evenodd">
+                          <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zM5.1 13.3L3.5 12 11 2.6l1.5 1.2-7.4 9.5z"></path>
+                      </svg>
+                      <div class="bx--inline-notification__text-wrapper">
+                          <p class="bx--inline-notification__title error-title" data-i18n="remoteLogin.tryAgainTitle"></p>
+                          <p class="bx--inline-notification__subtitle error-message"></p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="add-containers">
+                  <div class="bx--form-item add-container">
+                      <label for="add-id-input" class="bx--label authentication-user-label">Name</label>
+                      <input id="add-id-input" type="text" class="bx--text-input">
+                  </div>
+
+                  <div class="bx--form-item add-container">
+                      <label for="add-price-input" class="bx--label authentication-user-label">Unit Price ($)</label>
+                      <input id="add-price-input" type="text" class="bx--text-input">
+                  </div>
+              
+                  <div class="bx--form-item add-container">
+                      <label for="add-quantity-input" class="bx--label authentication-user-label">Quantity</label>
+                      <input id="add-quantity-input" type="text" class="bx--text-input">
+                  </div>
+              </div>
+  
+          </div>
+  
+          <div class="bx--modal-footer modal-footer">
+              <button class="bx--btn bx--btn--secondary" type="button" id="add-modal-cancel-button">Cancel</button>
+              <button class="bx--btn bx--btn--primary" type="button" id="add-modal-add-item-button">Ok</button>
+          </div>
+  
+      </div>
+  </div>
+
+<!-- EDIT MODAL -->
+<div data-modal class="bx--modal edit-modal" tabindex="-1">
+  <div class="bx--modal-container add-modal-container">
+      <div class="bx--modal-header">
+          <p class="bx--modal-header__heading bx--type-beta heading">Edit Grocery Item</p>
+          <button class="bx--modal-close" type="button" data-modal-close data-i18n="[aria-label]messageModal.close">
+              <svg class="bx--modal-close__icon" width="10" height="10" viewBox="0 0 10 10" fill-rule="evenodd">
+                  <path d="M9.8 8.6L8.4 10 5 6.4 1.4 10 0 8.6 3.6 5 .1 1.4 1.5 0 5 3.6 8.6 0 10 1.4 6.4 5z"></path>
+              </svg>
+          </button>
+      </div>
+
+      <div>
+
+          <div data-notification class="bx--inline-notification bx--inline-notification--error add-error-notification" role="alert"
+              style="display: none">
+              <div class="bx--inline-notification__details">
+                  <svg class="bx--inline-notification__icon" width="16" height="16" viewBox="0 0 16 16" fill-rule="evenodd">
+                      <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zM5.1 13.3L3.5 12 11 2.6l1.5 1.2-7.4 9.5z"></path>
+                  </svg>
+                  <div class="bx--inline-notification__text-wrapper">
+                      <p class="bx--inline-notification__title error-title" data-i18n="remoteLogin.tryAgainTitle"></p>
+                      <p class="bx--inline-notification__subtitle error-message"></p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="add-containers">
+              <div class="bx--form-item add-container">
+                  <label for="edit-id-input" class="bx--label authentication-user-label">Name</label>
+                  <input id="edit-id-input" type="text" class="bx--text-input" readonly>
+              </div>
+
+              <div class="bx--form-item add-container">
+                  <label for="edit-price-input" class="bx--label authentication-user-label">Unit Price ($)</label>
+                  <input id="edit-price-input" type="text" class="bx--text-input">
+              </div>
+          
+              <div class="bx--form-item add-container">
+                  <label for="edit-quantity-input" class="bx--label authentication-user-label">Quantity</label>
+                  <input id="edit-quantity-input" type="text" class="bx--text-input">
+              </div>
+          </div>
+
+      </div>
+
+      <div class="bx--modal-footer modal-footer">
+          <button class="bx--btn bx--btn--secondary" type="button" id="edit-modal-cancel-button">Cancel</button>
+          <button class="bx--btn bx--btn--primary" type="button" id="edit-modal-edit-item-button">Ok</button>
+      </div>
+
+  </div>
+</div>
+
+<!-- ADD DELETE ITEM FEATURE HERE - MODAL HTML -->
+<!-- DELETE MODAL -->
+  <div data-modal id="modal-phry06w79z" class="bx--modal bx--modal--danger delete-modal" role="dialog" aria-modal="true" aria-labelledby="modal-phry06w79z-label" aria-describedby="modal-phry06w79z-heading" tabindex="-1">
+    <div class="bx--modal-container">
+      <div class="bx--modal-header">
+        <p class="bx--modal-header__heading bx--type-beta" id="modal-phry06w79z-heading">Confirm Deletion</p>
+        <button class="bx--modal-close" type="button" data-modal-close aria-label="close modal" >
+          <svg class="bx--modal-close__icon" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+            <title>Close Modal</title>
+            <path d="M6.32 5L10 8.68 8.68 10 5 6.32 1.32 10 0 8.68 3.68 5 0 1.32 1.32 0 5 3.68 8.68 0 10 1.32 6.32 5z" fill-rule="nonzero"
+            />
+          </svg>
+        </button>
+      </div>
+  
+      <div class="bx--modal-content description">
+        <p></p>
+      </div>
+  
+      <div class="bx--modal-footer modal-footer">
+        <button class="bx--btn bx--btn--tertiary" type="button" data-modal-close id="delete-modal-yes-button">Yes</button>
+        <button class="bx--btn bx--btn--danger--primary" type="button" aria-label="Danger"
+           data-modal-primary-focus id="delete-modal-no-button">No</button>
+      </div>
+    </div>
+  </div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/carbon-components.js"></script>
+<script src="js/store.js"></script>
+
+</html>

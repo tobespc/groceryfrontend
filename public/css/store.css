@@ -1,0 +1,102 @@
+.tableContent {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.footer-content {
+    margin-top: 50px;
+    background-color: #00132e;
+    color: white;
+    padding: 20px;
+    display: flex;           
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;  
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content .logo {
+    margin-left: 5px;
+    height: 20px;
+}
+
+/* ADD MODAL STYLE */
+.add-modal .modal-footer {
+    min-height: 100px;
+}
+
+.add-modal .modal-footer button {
+    min-width: 140px;
+}
+
+/* TEMPORARY CHANGE TO CARBON BUTTON IN DIALOG FOR ACCESSIBILITY COMPLIANCE */
+.add-modal button.bx--btn--tertiary {
+    color: #5e5e5e;
+}
+.add-modal .modal-footer button.bx--btn--tertiary:focus,
+.add-modal .modal-footer button.bx--btn--tertiary:hover {
+    color: white;
+}
+
+.add-modal .add-message-container {
+    margin-bottom: 20px;
+}
+
+.add-modal .add-containers {
+    margin-bottom: 20px;
+    min-width: 250px;
+}
+
+.add-modal .add-container {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.add-container {
+    padding-right: 2px;
+}
+
+/* EDIT MODAL STYLE */
+.edit-modal .modal-footer {
+    min-height: 100px;
+}
+
+.edit-modal .modal-footer button {
+    min-width: 140px;
+}
+
+/* TEMPORARY CHANGE TO CARBON BUTTON IN DIALOG FOR ACCESSIBILITY COMPLIANCE */
+.edit-modal button.bx--btn--tertiary {
+    color: #5e5e5e;
+}
+.edit-modal .modal-footer button.bx--btn--tertiary:focus,
+.edit-modal .modal-footer button.bx--btn--tertiary:hover {
+    color: white;
+}
+
+.edit-modal .add-message-container {
+    margin-bottom: 20px;
+}
+
+.edit-modal .add-containers {
+    margin-bottom: 20px;
+    min-width: 250px;
+}
+
+.edit-modal .add-container {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* DELETE MODAL STYLE */
+.delete-modal .description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.delete-modal .modal-footer button {
+    min-width: 140px;
+}
