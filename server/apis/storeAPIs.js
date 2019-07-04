@@ -3,7 +3,7 @@ var http = require('http');
 
 module.exports = function(app) {
   var router = express.Router();
-  var backendHost = "cw-nodebackend-e4d739a0-9732-11e9-9b1f-2bb77e312d8f";
+  var backendHost = "nodebackend";
   var backendPort = 9096;
 
   app.all('*', function (req, res, next) {
