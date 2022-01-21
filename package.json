@@ -32,7 +32,7 @@
     "appmetrics-zipkin": "^1.0.4",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "log4js": "^3.0.5",
+    "log4js": "^6.4.0",
     "strong-supervisor": "^6.2.0",
     "ibm-cloud-env": "^0",
     "cors": "2.8.5"
